@@ -3,4 +3,5 @@ def greeting(name)
   "Good morning,#{name}!"
 end
 
-puts greeting('John')
+puts greeting("John")
+# メソッド名(引数)

@@ -1,11 +1,5 @@
-puts "ようこそ☆何回ガチャを引きますか！？！？"
+gacha = {"奏汰"=>1,"千秋"=>50,"冬弥"=>1000,"彰人"=>5}
 
-gacha = gets.to_i
-
-i = 1
-while i <= gacha do
-  puts "#{i}回目の結果は…"
-  
-  
-i += 1
+gacha.each do |name,number|
+  puts "#{name}はガチャ#{number}回目で当たった！！"
 end
