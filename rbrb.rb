@@ -44,10 +44,10 @@ two = gets.to_i
  tako = play(two)
 
 puts "今日は…"
-  if one == (1..5) && two == (1..5)
-    splatoon(ika,tako)
-    puts "ほな カイサン!!!"
-  else
-    puts "ゲームは我慢して、勉強をしましょう。"
-    puts "イカよろしく〜"
-  end
+if ((1..5) === one) && ((1..5) === two)
+  splatoon(ika,tako)
+  puts "ほな カイサン!!!"
+else
+  puts "ゲームは我慢して、勉強をしよう。"
+  puts "イカよろしく〜。"
+end
