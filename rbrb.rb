@@ -9,8 +9,6 @@ def rule(one)
     "ヒーローモード"
   elsif one == 5
     "試し打ち場"
-  else
-    "現実世界"
   end
 end
 
@@ -26,8 +24,6 @@ def play(two)
     "イクラ回収しまくら"
   elsif two == 5
     "メガホンライブし"
-  else
-    "勉強ガンバら"
   end
 end
 
@@ -48,5 +44,10 @@ two = gets.to_i
  tako = play(two)
 
 puts "今日は…"
-splatoon(ika,tako)
-puts "ほな カイサン!!!"
+  if one == (1..5) && two == (1..5)
+    splatoon(ika,tako)
+    puts "ほな カイサン!!!"
+  else
+    puts "ゲームは我慢して、勉強をしましょう。"
+    puts "イカよろしく〜"
+  end
